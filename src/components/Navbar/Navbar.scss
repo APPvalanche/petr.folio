@@ -6,11 +6,10 @@
   align-items: center;
 
   padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.25);
-  // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  background: var(--white-color);
+  box-shadow: 0 0 30px 0 rgba(37, 38, 39, 0.1);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
   z-index: 2;
 }
@@ -21,8 +20,8 @@
   align-items: center;
 
   img {
-    width: 90px;
-    height: 20px;
+    width: 140px;
+    height: 45px;
 
     @media screen and (min-width: 2000px) {
       width: 180px;
@@ -34,7 +33,7 @@
 .app__navbar-links {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 
   list-style: none;
@@ -46,32 +45,32 @@
     flex-direction: column;
 
     div {
-      width: 5px;
-      height: 5px;
+      width: 20px;
+      height: 2px;
       background: transparent;
-      border-radius: 50%;
 
       margin-bottom: 5px;
     }
 
     a {
-      color: var(--gray-color);
+      color: var(--lightGray-color);
       text-decoration: none;
       flex-direction: column;
 
       text-transform: uppercase;
       font-weight: 500;
 
-      transition: all 0.3s ease-in-out;
+      transition: all 0.1s ease-in-out;
 
       &:hover {
-        color: var(--secondary-color);
+        color: var(--black-color);
       }
     }
 
     &:hover {
       div {
-        background: var(--secondary-color);
+        background-color: VAR(--black-color);
+        transition: all 0.1s ease-in-out;
       }
     }
   }
@@ -92,7 +91,6 @@
   align-items: center;
   background-color: var(--secondary-color);
 
-
   svg {
     width: 70%;
     height: 70%;
@@ -110,13 +108,13 @@
 
     width: 80%;
     height: 100vh;
-    
+
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    
-    background: url('../../assets/bgWhite.png');
+
+    background: url("../../assets/bgWhite.png");
     background-color: var(--white-color);
     background-size: cover;
     background-repeat: repeat;
