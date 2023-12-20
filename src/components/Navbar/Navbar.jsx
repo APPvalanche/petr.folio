@@ -15,7 +15,7 @@ const Navbar = () => {
   const logoRef = useRef < lottieRefCurrentProps > null;
 
   return (
-    <nav className="app__navbar">
+    <nav className="app__navbar glassmorphism__light">
       <div className="app__navbar-animation">
         <Lottie
           onComplete={() => {
