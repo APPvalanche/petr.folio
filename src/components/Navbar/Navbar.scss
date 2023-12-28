@@ -6,9 +6,6 @@
   align-items: center;
 
   padding: 1rem 2rem;
-  box-shadow: 0 0 30px 0 rgba(37, 38, 39, 0.1);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   position: fixed;
   z-index: 2;
 }
@@ -113,7 +110,7 @@
     align-items: flex-end;
     flex-direction: column;
 
-    background: url("../../assets/bgHeader.png");
+    background: url("../../assets/bgHeader.jpg");
     background-color: var(--white-color);
     background-size: cover;
     background-repeat: repeat;
