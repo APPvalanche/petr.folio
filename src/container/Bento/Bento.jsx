@@ -1,35 +1,37 @@
-import React from 'react'
-import './Bento.scss';
-import { AppWrap, MotionWrap } from '../../wrapper';
+import React from "react";
+import "./Bento.scss";
+import { images } from "../../constants";
+import { AppWrap, MotionWrap } from "../../wrapper";
 
 const Bento = () => {
   return (
-
-
     <div id="bento">
-        <div className='app__social'>
-
-        </div>   
-
-        <div className='wrapper'>
-          <div className="grid1 glassmorphism__dark">1</div>
-          <div className="grid2 glassmorphism__dark">2</div>
-          <div className="grid3 glassmorphism__dark">3</div>
-          <div className="grid4 glassmorphism__dark">4</div>
-          <div className="grid5 glassmorphism__dark">5</div>
-          <div className="grid6 glassmorphism__dark">6</div>
-          <div className="grid7 glassmorphism__dark">7</div>
-          <div className="grid8 glassmorphism__dark">8</div>
-          <div className="grid9 glassmorphism__dark">9</div>
-          <div className="grid10 glassmorphism__dark">10</div>
-          <div className="grid11 glassmorphism__dark">11</div>
+      <div className="wrapper">
+        <div className="grid1">
+          <h2>
+            <span>APP</span><br />
+            valan- <br />
+            che
+          </h2>
+        </div>
+        <div className="grid2">
+            <img src={images.bento_profile} alt="profile picture" />
         </div>
 
-        <div className='app__navigation'>
-
+        <div className="grid3">
+          <div className="description">
+            <h2>Hi!</h2>
+            <p> Do you need professional and modern website? If the answer is yes, don't need to look any further. Here starts your website journey. I am Petr and I am a website developer.</p>
+          </div>
         </div>
-   </div>
-  )
-}
+
+        <div className="grid4 grid_shadow">4</div>
+        <div className="grid5 grid_shadow">5</div>
+        <div className="grid6 grid_shadow">6</div>
+        <div className="grid7 grid_shadow">7</div>
+      </div>
+    </div>
+  );
+};
 
 export default Bento;
