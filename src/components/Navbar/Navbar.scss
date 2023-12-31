@@ -10,22 +10,6 @@
   z-index: 2;
 }
 
-.app__navbar-logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-  img {
-    width: 140px;
-    height: 45px;
-
-    @media screen and (min-width: 2000px) {
-      width: 180px;
-      height: 40px;
-    }
-  }
-}
-
 .app__navbar-links {
   flex: 1;
   display: flex;
@@ -49,17 +33,17 @@
     }
 
     a {
-      color: var(--secondary-color);
+      color: var(--black-color);
       text-decoration: none;
       flex-direction: column;
 
       text-transform: uppercase;
-      font-weight: 500;
+      font-weight: 800;
 
       transition: all 0.1s ease-in-out;
 
       &:hover {
-        color: var(--black-color);
+        color: #000;
       }
     }
 

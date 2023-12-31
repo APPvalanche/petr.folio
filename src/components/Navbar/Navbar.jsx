@@ -3,7 +3,6 @@ import { Link } from "react-scroll";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 
-import { images } from "../../constants";
 import "./Navbar.scss";
 import Lottie, { lottieRefCurrentProps } from "lottie-react";
 import animationData from "../../assets/Logo-animation.json";
@@ -26,9 +25,6 @@ const Navbar = () => {
           animationData={animationData}
           style={{ height: "50px", width: "50px", margin: "0 0.5rem" }}
         />
-      </div>
-      <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
         {["home", "about", "work", "skills", "contact"].map((item) => (

@@ -1,65 +1,59 @@
 import React from "react";
-import { motion } from "framer-motion";
-
-import { AppWrap } from "../../wrapper";
-import { images } from "../../constants";
 import "./Header.scss";
-
-const scaleVariants = {
-  whileInView: {
-    scale: [0, 1],
-    opacity: [0, 1],
-    transition: {
-      duration: 1,
-      ease: "easeInOut",
-    },
-  },
-};
+import { images } from "../../constants";
+import { AppWrap, MotionWrap } from "../../wrapper";
+import { GrSecure } from "react-icons/gr";
+import { TfiStatsUp } from "react-icons/tfi";
 
 const Header = () => {
   return (
-    <div className="app__header app__flex">
-      <motion.div
-        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.5 }}
-        className="app__header-info"
-      >
-        <div className="app__header-badge">
-          <div className="badge-cmp app__flex">
-            <div style={{ marginLeft: 0 }}>
-              <h2 className="head-text">Hi, I am Petr.</h2>
-            </div>
-          </div>
-          <div className="tag-cmp app__flex">
-            <p className="p-text">Web Developer | Freelancer</p>
+    <div id="home">
+      <div className="wrapper">
+        <div className="grid1">
+          <h2>
+            <span>APP</span><br />
+            valan- <br />
+            che
+          </h2>
+        </div>
+        <div className="grid2">
+            <img src={images.bento_profile} alt="profile picture" />
+        </div>
+
+        <div className="grid3 grid_shadow">
+          <div className="description">
+            <h2>Hello,</h2>
+            <p> Unlock the potential for your business with a professional website! Boost your online visibility, attract more customers, and stay ahead of the competition.</p>
+            <button><a href="#contact">Get in Touch!</a></button>
           </div>
         </div>
-      </motion.div>
 
-      <motion.div
-        whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="app__header-img"
-      >
-        <img src={images.profile} alt="profile_bg" />
-      </motion.div>
-
-      <motion.div
-        variant={scaleVariants}
-        whileInView={scaleVariants.whileInView}
-        className="app__header-circles"
-      >
-        {[images.node, images.react, images.sass].map((circle, index) => (
-          <div
-            className="circle-cmp app__flex glassmorphism__light"
-            key={`circle-${index}`}
-          >
-            <img src={circle} alt="circle" />
+        <div className="grid4 grid_shadow">
+          <div className="phone">
+            <img src={images.phone} alt="phone image" />
           </div>
-        ))}
-      </motion.div>
+        </div>
+        <div className="grid5 grid_shadow">
+          <div>
+            <TfiStatsUp />
+          </div>
+            <h3>Business<br />
+                Solution.
+            </h3>
+        </div>
+        <div className="grid6 grid_shadow">
+          <img src={images.city_bg} alt="night city" /> 
+        </div>
+        <div className="grid7 grid_shadow">
+              <div>
+                <GrSecure />
+                <h3>Security</h3>
+              </div>
+              
+        </div>
+      </div>
     </div>
   );
 };
 
-export default AppWrap(Header, "home");
+export default Header;
