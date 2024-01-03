@@ -1,0 +1,23 @@
+.features {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #1a0c31;
+}
+
+.features__text {
+  padding: 1rem 2rem;
+  width: 50%;
+
+  h2 {
+    color: var(--white-color);
+    text-align: left;
+  }
+}
+
+.features__animation {
+  padding: 1rem;
+  width: 50%;
+}

@@ -1,59 +1,57 @@
 import React from "react";
-import "./Header.scss";
-import { images } from "../../constants";
+import { motion } from "framer-motion";
+
 import { AppWrap, MotionWrap } from "../../wrapper";
-import { GrSecure } from "react-icons/gr";
-import { TfiStatsUp } from "react-icons/tfi";
+import { images } from "../../constants";
+import "./Header.scss";
+
+const scaleVariants = {
+  whileInView: {
+    scale: [0, 1],
+    opacity: [0, 1],
+    transition: {
+      duration: 1,
+      ease: "easeInOut",
+    },
+  },
+};
 
 const Header = () => {
   return (
-    <div id="home">
-      <div className="wrapper">
-        <div className="grid1">
-          <h2>
-            <span>APP</span><br />
-            valan- <br />
-            che
-          </h2>
-        </div>
-        <div className="grid2">
-            <img src={images.bento_profile} alt="profile picture" />
-        </div>
+    <>
+    <div className="app__header app__flex" id="home">
+      <motion.div
+        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="app__header-description"
+      >
+        <div className="description">
+          <h2>Hi, Welcome!</h2>
+          <p className="p-text">
+            Unlock the potential for your business with a professional website!
+            Boost your online visibility, attract more customers, and stay ahead
+            of the competition.
+          </p>
+          <button className="button1">
+            <a href="#contact">Get in Touch!</a>
+          </button>
+          </div>
+      </motion.div>
 
-        <div className="grid3 grid_shadow">
-          <div className="description">
-            <h2>Hello,</h2>
-            <p> Unlock the potential for your business with a professional website! Boost your online visibility, attract more customers, and stay ahead of the competition.</p>
-            <button><a href="#contact">Get in Touch!</a></button>
-          </div>
-        </div>
-
-        <div className="grid4 grid_shadow">
-          <div className="phone">
-            <img src={images.phone} alt="phone image" />
-          </div>
-        </div>
-        <div className="grid5 grid_shadow">
-          <div>
-            <TfiStatsUp />
-          </div>
-            <h3>Business<br />
-                Solution.
-            </h3>
-        </div>
-        <div className="grid6 grid_shadow">
-          <img src={images.city_bg} alt="night city" /> 
-        </div>
-        <div className="grid7 grid_shadow">
-              <div>
-                <GrSecure />
-                <h3>Security</h3>
-              </div>
-              
-        </div>
-      </div>
+      <motion.div
+        whileInView={{ opacity: [0, 1] }}
+        transition={{ duration: 0.5, delayChildren: 0.5 }}
+        className="app__header-img"
+      >
+        <img src={images.profile} alt="profile_bg" />
+      </motion.div>
     </div>
+    </>
   );
 };
 
-export default Header;
+export default AppWrap(
+  MotionWrap(Header, "app__header"),
+  "header",
+  "app__primarybg"
+);

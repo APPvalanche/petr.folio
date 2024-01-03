@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-import { About, Footer, Header, Skills, Testimonial, Work } from "./container";
+import { About, Footer, Header, Skills, Testimonial, Work, Features } from "./container";
 import { Navbar } from "./components";
 import "./App.scss";
 import 'react-tooltip/dist/react-tooltip.css';
@@ -17,6 +17,7 @@ const App = () => {
       </Helmet>
       <Navbar />
       <Header />
+      <Features />
       <About />
       <Work />
       <Skills />

@@ -4,7 +4,7 @@
 :root {
   --font-base: "Manrope", sans-serif;
 
-  --primary-color: #edf2f8;
+  --primary-color: #f4f6fc;
   --secondary-color: #072AC8;
   --black-color: #0c1821;
   --lightGray-color: #e4e4e4;
@@ -24,7 +24,7 @@
 .glassmorphism__light {
   backdrop-filter: blur(19px) saturate(160%);
     -webkit-backdrop-filter: blur(19px) saturate(160%);
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 12px;
     border: 1px solid rgba(209, 213, 219, 0.3);
 }

@@ -39,7 +39,7 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text">
-        My Creative <span>Portfolio Section</span>
+      Explore Our Projects
       </h2>
 
       <div className="app__work-filter">
