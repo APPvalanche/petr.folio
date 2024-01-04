@@ -28,7 +28,7 @@ const Features = () => {
               <li>
                 <MdOutlineRocketLaunch />
                 <p className="p-text">
-                  Comprehensive Full-Stack Support: Our all-in-one service,
+                  <span>Comprehensive Full-Stack Support:</span> Our all-in-one service,
                   covering everything from website design and creation to
                   testing, hosting, and deployment.
                 </p>
@@ -36,7 +36,7 @@ const Features = () => {
               <li>
                 <MdOutlineSecurity />
                 <p className="p-text">
-                  Security: Implement robust security measures to protect user
+                  <span>Security:</span> Implement robust security measures to protect user
                   data and ensure the safety of online transactions. Communicate
                   clearly about security features to build trust with users.
                 </p>
@@ -44,7 +44,7 @@ const Features = () => {
               <li>
                 <MdSpeed />
                 <p className="p-text">
-                  Fast Loading Speed: Optimize website performance to minimize
+                <span>Fast Loading Speed:</span> Optimize website performance to minimize
                   loading times. Customers appreciate websites that load
                   quickly, as it contributes to a positive user experience and
                   can impact search engine rankings.
@@ -53,7 +53,7 @@ const Features = () => {
               <li>
                 <MdOutlineScreenSearchDesktop />
                 <p className="p-text">
-                  SEO-Friendly Practices: Incorporate search engine optimization
+                <span>SEO-Friendly Practices:</span> Incorporate search engine optimization
                   (SEO) best practices to improve the website's visibility on
                   search engines. This includes optimizing content, meta tags,
                   and other elements for better search engine rankings.
@@ -62,7 +62,7 @@ const Features = () => {
               <li>
                 <MdStarRate />
                 <p className="p-text">
-                  Outstanding Communication and Customer Service: Benefit from
+                <span>Outstanding Communication and Customer Service:</span> Benefit from
                   excellent communication and dedicated customer service
                   throughout your engagement with us.
                 </p>
