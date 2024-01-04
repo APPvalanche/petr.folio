@@ -18,7 +18,7 @@ const About = () => {
   return (
     <>
       <h2 className="head-text">
-        Our Services
+        What We Offer
       </h2>
       <p className="p-text">
       Create a lasting impact with our web development services.
