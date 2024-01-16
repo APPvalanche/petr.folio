@@ -1,10 +1,6 @@
-#home {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
 
   // disable the default padding styles
+
   .app__wrapper {
     padding: 0;
 
@@ -12,7 +8,6 @@
       display: none;
     }
   }
-}
 
 .app__header {
   flex: 1;
@@ -51,6 +46,7 @@
   align-items: center;
   justify-content: center;
   justify-items: center;
+  max-width: 550px;
 
   h2 {
     font-size: 44px;

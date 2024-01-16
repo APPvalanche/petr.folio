@@ -38,7 +38,7 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">
+      <h2 className="head-text" id="work">
       Explore Our Projects
       </h2>
 

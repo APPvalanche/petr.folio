@@ -2,14 +2,16 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
-
-import "./Navbar.scss";
 import Lottie, { lottieRefCurrentProps } from "lottie-react";
 import animationData from "../../assets/Logo-animation.json";
 import { useRef } from "react";
+import { IoIosGlobe } from "react-icons/io";
+
+import "./Navbar.scss";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [openLanguages, setOpenLanguges] = useState(false);
 
   const logoRef = useRef < lottieRefCurrentProps > null;
 
@@ -26,6 +28,7 @@ const Navbar = () => {
           style={{ height: "50px", width: "50px", margin: "0 0.5rem" }}
         />
       </div>
+
       <ul className="app__navbar-links">
         {["home", "about", "work", "skills", "contact"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
@@ -36,7 +39,6 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
 
@@ -54,6 +56,24 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
+            </ul>
+          </motion.div>
+        )}
+      </div>
+
+      <div className="app__navbar-languages">
+        <IoIosGlobe onClick={() => setOpenLanguges(true)} />
+
+        {openLanguages && (
+          <motion.div
+            whileInView={{ x: [300, 0] }}
+            transition={{ duration: 0.85, ease: "easeOut" }}
+          >
+            <HiX onClick={() => setOpenLanguges(false)} />
+            <ul>
+              <li>English</li>
+              <li>Čeština</li>
+              <li>Español</li>
             </ul>
           </motion.div>
         )}

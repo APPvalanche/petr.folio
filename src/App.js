@@ -1,12 +1,25 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-import { About, Footer, Header, Skills, Testimonial, Work, Features } from "./container";
+import {
+  About,
+  Footer,
+  Header,
+  Skills,
+  Testimonial,
+  Work,
+  Features,
+} from "./container";
 import { Navbar } from "./components";
+import { useTranslation } from "react-i18next";
+
 import "./App.scss";
-import 'react-tooltip/dist/react-tooltip.css';
+import "react-tooltip/dist/react-tooltip.css";
 
 const App = () => {
+
+  const { t } = useTranslation()
+  
   return (
     <div className="app">
       <Helmet>

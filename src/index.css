@@ -4,14 +4,13 @@
 :root {
   --font-base: "Manrope", sans-serif;
 
-  --primary-color: #f4f6fc;
-  --secondary-color: #072ac8;
+  --primary-color: #fdfdff;
+  --secondary-color: #5271ff;
   --black-color: #0c1821;
   --lightGray-color: #e4e4e4;
   --gray-color: #6b7688;
-  --brown-color: #46364a;
   --white-color: #ffffff;
-  --violet-color: #333533;
+  --violet-color: #fafaff;
 }
 
 * {
@@ -22,21 +21,29 @@
 }
 
 .glassmorphism__light {
-  backdrop-filter: blur(19px) saturate(160%);
+  backdrop-filter: blur(10px) saturate(160%);
   -webkit-backdrop-filter: blur(19px) saturate(160%);
   background-color: rgba(255, 255, 255, 0.85);
-  border-radius: 12px;
-  border: 1px solid rgba(209, 213, 219, 0.3);
+  border-radius: 10px;
+  border: 1px solid rgba(209, 213, 219, 0.35);
 }
 
 .glassmorphism__dark {
   backdrop-filter: blur(19px) saturate(160%);
   -webkit-backdrop-filter: blur(19px) saturate(160%);
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.80);
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
-.background__gradients {
-  background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+.bg__gradients {
+  background: hsla(240, 100%, 100%, 1);
+  background-color: linear-gradient(45deg, hsla(240, 100%, 100%, 1) 0%, hsla(240, 100%, 99%, 1) 50%, hsla(229, 100%, 85%, 1) 100%);
+  background: -moz-linear-gradient(45deg, hsla(240, 100%, 100%, 1) 0%, hsla(240, 100%, 99%, 1) 50%, hsla(229, 100%, 85%, 1) 100%);
+  background: -webkit-linear-gradient(45deg, hsla(240, 100%, 100%, 1) 0%, hsla(240, 100%, 99%, 1) 50%, hsla(229, 100%, 85%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FDFDFF", endColorstr="#FAFAFF", GradientType=1 );
+}
+
+.neumorphism__white {
+  box-shadow: -3px -3px 7px #f7f7f673, 3px 3px 5px rgba(94, 104, 121, 0.288);
 }

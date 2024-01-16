@@ -1,33 +1,38 @@
+
+.app__container {
+  @media screen and (min-width: 1200px) {
+    flex-direction: column-reverse;
+  }
+}
+
 .features {
   display: flex;
+  flex-direction: row;
+  gap: 2rem;
   align-items: center;
   justify-items: center;
-  border-radius: 10px;
   margin: 0 2rem;
-  background-color:  #050a30;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
   scroll-behavior: smooth;
 
   @media screen and (min-width: 2000px) {
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 
-  @media screen and (max-width: 1200px) {
-    flex-direction: column;
+  @media screen and (max-width: 950px) {
+    flex-direction: column-reverse;
   }
 
   @media screen and (max-width: 450px) {
-    padding: 2rem 1rem 2rem;
+    padding: 0;
     margin: 0;
   }
 }
 
 .features__text {
-  padding: 1rem 2rem;
   width: 50%;
 
   @media screen and (max-width: 900px) {
-    width: 80%;
+    width: 100%;
     padding: 1rem;
   }
 
@@ -37,16 +42,16 @@
   }
 
   h2 {
-    color: var(--white-color);
+    max-width: 650px;
     text-align: left;
-    padding: 0 0 1rem 1rem;
+    padding-left: 1rem;
   }
 
   button {
     margin: 2rem 1rem;
     background-color: var(--secondary-color);
     offset: none;
-    width: 250px;
+    width: 150px;
     height: 50px;
     border-radius: 10px;
     border: none;
@@ -61,43 +66,14 @@
     &:hover {
       opacity: 0.9;
     }
-
-    ul {
-      border: 1px solid red;
-    }
-  }
-}
-
-.list {
-  align-items: center;
-  justify-content: center;
-
-  li {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    padding: 1rem 0;
-
-    svg {
-      color: var(--white-color);
-      font-size: 80px;
-      margin: 0 1rem;
-    }
-    span {
-      color: var(--white-color);
-      font-weight: bold;
-    }
   }
 }
 
 .features__animation {
-  padding: 1rem;
   width: 50%;
 
   @media screen and (max-width: 900px) {
-    width: 80%;
+    width: 100%;
     padding: 1rem;
   }
 

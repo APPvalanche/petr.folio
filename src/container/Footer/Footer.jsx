@@ -60,7 +60,7 @@ const Footer = () => {
       </div>
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
-          <div className="app__flex">
+          <div className="app__flex neumorphism__white">
             <input
               className="p-text"
               type="text"
@@ -70,7 +70,7 @@ const Footer = () => {
               onChange={handleChangeInput}
             />
           </div>
-          <div className="app__flex">
+          <div className="app__flex neumorphism__white">
             <input
               className="p-text"
               type="email"
@@ -82,7 +82,7 @@ const Footer = () => {
           </div>
           <div>
             <textarea
-              className="p-text"
+              className="p-text neumorphism__white"
               placeholder="Your Message"
               value={message}
               name="message"

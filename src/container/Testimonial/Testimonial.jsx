@@ -32,7 +32,7 @@ const Testimonial = () => {
     <>
       {testimonials.length && (
         <>
-          <div className="app__testimonial-item app__flex">
+          <div className="app__testimonial-item app__flex neumorphism__white">
             <img
               src={urlFor(testimonials[currentIndex].imgurl)}
               alt={testimonials[currentIndex].name}
@@ -48,7 +48,7 @@ const Testimonial = () => {
 
           <div className="app__testimonial-btns app__flex">
             <div
-              className="app__flex"
+              className="app__flex neumorphism__white"
               onClick={() =>
                 handleClick(
                   currentIndex === 0
@@ -61,7 +61,7 @@ const Testimonial = () => {
             </div>
 
             <div
-              className="app__flex"
+              className="app__flex neumorphism__white"
               onClick={() =>
                 handleClick(
                   currentIndex === testimonials.length - 1
