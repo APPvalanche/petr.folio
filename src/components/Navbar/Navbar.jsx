@@ -6,8 +6,27 @@ import Lottie, { lottieRefCurrentProps } from "lottie-react";
 import animationData from "../../assets/Logo-animation.json";
 import { useRef } from "react";
 import { IoIosGlobe } from "react-icons/io";
+import i18next from "i18next";
 
 import "./Navbar.scss";
+
+const languages = [
+  {
+    code: "en",
+    name: "English",
+    country_code: "gb",
+  },
+  {
+    code: "cs",
+    name: "Čeština",
+    country_code: "cz",
+  },
+  {
+    code: "es",
+    name: "Español",
+    country_code: "es",
+  },
+];
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -62,18 +81,24 @@ const Navbar = () => {
       </div>
 
       <div className="app__navbar-languages">
-        <IoIosGlobe onClick={() => setOpenLanguges(true)} />
+        <IoIosGlobe color="#5271ff" onClick={() => setOpenLanguges(true)} />
 
         {openLanguages && (
           <motion.div
+            className="app__languages-div"
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.85, ease: "easeOut" }}
           >
             <HiX onClick={() => setOpenLanguges(false)} />
             <ul>
-              <li>English</li>
-              <li>Čeština</li>
-              <li>Español</li>
+              {languages.map(({ code, name, country_code }) => (
+                <li key={country_code}>
+                  <button onClick={() => i18next.changeLanguage(code)}>
+                    <span className={`flag-icon flag-icon-${country_code}`}></span>
+                    <span onClick={() => setOpenLanguges(false)}>{name}</span>
+                  </button>
+                </li>
+              ))}
             </ul>
           </motion.div>
         )}

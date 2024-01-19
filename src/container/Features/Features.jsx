@@ -8,6 +8,7 @@ import "./Features.scss";
 const Features = () => {
   return (
     <>
+    <div className="app__features">
       <div className="features">
         <div className="features__animation">
           <Lottie animationData={animationData} />
@@ -21,6 +22,7 @@ const Features = () => {
           </button>
 
         </div>
+      </div>
       </div>
     </>
   );

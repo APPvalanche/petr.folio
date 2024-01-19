@@ -32,7 +32,7 @@ const Testimonial = () => {
     <>
       {testimonials.length && (
         <>
-          <div className="app__testimonial-item app__flex neumorphism__white">
+          <div className="app__testimonial-item app__flex glassmorphism__light">
             <img
               src={urlFor(testimonials[currentIndex].imgurl)}
               alt={testimonials[currentIndex].name}

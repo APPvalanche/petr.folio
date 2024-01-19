@@ -1,5 +1,16 @@
+#features {
+  background-image: url(../../assets/feature_bg.png);
+  height: 100%;
+  background-size: cover;
+  
+    img {
+      background-repeat: no-repeat;
+      height: 100%;
+      width: auto;
+  }
+}
 
-.app__container {
+.app__features {
   @media screen and (min-width: 1200px) {
     flex-direction: column-reverse;
   }
@@ -13,6 +24,8 @@
   justify-items: center;
   margin: 0 2rem;
   scroll-behavior: smooth;
+  background: transparent;
+  
 
   @media screen and (min-width: 2000px) {
     margin-top: 0rem;
