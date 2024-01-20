@@ -16,13 +16,9 @@ import redux from "../assets/redux.png";
 import sass from "../assets/sass.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
-import gradient_background from "../assets/gradient_background.jpg";
 
 import profile from "../assets/profile.png";
 import logo from "../assets/logo.png";
-import czech from "../assets/czech.png";
-import english from "../assets/english.png";
-import spanish from "../assets/spanish.png";
 
 import amazon from "../assets/amazon.png";
 
@@ -48,8 +44,4 @@ export default {
   profile,
   logo,
   amazon,
-  gradient_background,
-  czech,
-  english,
-  spanish,
 };

@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { images } from "../../constants";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 import "./Header.scss";
 
@@ -37,9 +38,15 @@ const Header = () => {
           <p className="p-text">
           {t("header_info")}
           </p>
-          <button>
-            <a href="#contact">{t("header_info_button")}</a>
-          </button>
+          <div className="btns">
+            <button className="btn_contact">
+              <a href="#contact">{t("header_info_btn_contact")}</a>
+            </button>
+            <button className="btn_work">
+              <a href="#work">{t("header_info_btn_work")}</a>
+              <MdKeyboardDoubleArrowRight />
+            </button>
+          </div>
           </div>
       </motion.div>
 

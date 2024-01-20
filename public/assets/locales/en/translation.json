@@ -3,5 +3,9 @@
   "language": "Language",
   "greeting": "Hi, Welcome!",
   "header_info": "Unlock the potential for your business with a professional website! Boost your online visibility, attract more customers, and stay ahead of the competition.",
-  "header_info_button": "Get in Touch!"
+  "header_info_btn_contact": "Get in Touch!",
+  "header_info_btn_work": "My work",
+  "about_header": "Our Services",
+  "about_header_p": "Seeking Precision in Code, Modern Design, and a Responsive & Dynamic website for your business? Look no further!",
+  "about_header_p_info": "I provide end-to-end full-stack services, from consultations to website deployment, crafting everything from portfolios, website applications to e-commerce platforms."
 }

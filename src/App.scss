@@ -82,6 +82,20 @@
   }
 }
 
+.p-text-info {
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--gray-color);
+  line-height: 1.5;
+  font-weight: 500;
+  margin-top: 1rem;
+  max-width: 750px;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 1.75rem;
+  }
+}
+
 .bold-text {
   font-size: 1rem;
   font-weight: 800;

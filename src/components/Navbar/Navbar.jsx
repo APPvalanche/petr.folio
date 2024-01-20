@@ -6,6 +6,7 @@ import Lottie, { lottieRefCurrentProps } from "lottie-react";
 import animationData from "../../assets/Logo-animation.json";
 import { useRef } from "react";
 import { IoIosGlobe } from "react-icons/io";
+import { RiArrowDropDownLine } from "react-icons/ri";
 import i18next from "i18next";
 
 import "./Navbar.scss";
@@ -81,7 +82,11 @@ const Navbar = () => {
       </div>
 
       <div className="app__navbar-languages">
-        <IoIosGlobe color="#5271ff" onClick={() => setOpenLanguges(true)} />
+        <button onClick={() => setOpenLanguges(true)} >
+          <IoIosGlobe />
+          <RiArrowDropDownLine />
+        </button>
+        
 
         {openLanguages && (
           <motion.div

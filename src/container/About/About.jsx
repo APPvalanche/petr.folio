@@ -1,10 +1,12 @@
 
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import "./About.scss";
 import { urlFor, client } from "../../client";
+
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -15,15 +17,20 @@ const About = () => {
     client.fetch(query).then((data) => setAbouts(data));
   }, []);
 
+  const { t } = useTranslation()
+
   return (
     <>
       <h2 className="head-text">
-        What We Offer
+        {t("about_header")}
       </h2>
-      <p className="p-text">
-      Create a lasting impact with our web development services.
-      </p>
-
+        <p className="about-p">
+          <span>{t("about_header_p")}</span>
+        </p>
+        <p className="about-p">
+          {t("about_header_p_info")}
+        </p>
+     
       <div className="app__profiles">
         {abouts.map((about, index) => (
           <motion.div

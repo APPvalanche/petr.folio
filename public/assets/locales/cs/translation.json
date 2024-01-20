@@ -3,5 +3,8 @@
   "language": "Language",
   "greeting": "Dobrý den, vítejte!",
   "header_info": "Odemkněte potenciál svého podnikání pomocí profesionálního webu! Zvyšte svou online viditelnost, přilákejte více zákazníků a zůstaňte o krok napřed před konkurencí.",
-  "header_info_button": "Kontaktujte nás!"
+  "header_info_btn_contact": "Kontaktujte nás!",
+  "header_info_btn_work": "Má práce",
+  "about_header": "Naše služby",
+  "about_header_info": "Hledáte přesnost v kódu, moderní design a responzivní a dynamické webové stránky pro vaši firmu? Jste tady správně! Poskytuji komplexní služby od konzultací až po nasazení webových stránek, tvořím vše od portfolií po webové aplikace a e-shop."
 }

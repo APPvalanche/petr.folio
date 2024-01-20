@@ -1,45 +1,61 @@
-#about {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
+.app__about {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
 }
 
-.app__about {
-    flex: 1;
-    width: 100%;
-    flex-direction: column;
+.about-p {
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  max-width: 700px;
+  text-align: center;
+  margin-top: 1rem;
+
+  span {
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin: 1rem;
+  }
+}
+
+.about_text {
+  max-width: 750px;
+  text-align: center;
 }
 
 .app__profiles {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .app__profile-item {
-    width: 190px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    margin: 2rem;
+  width: 190px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 2rem;
+
+  img {
+    width: 100%;
+    height: 80px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  @media screen and (min-width: 2000px) {
+    width: 370px;
+    margin: 2rem 4rem;
 
     img {
-        width: 100%;
-        height: 80px;
-        border-radius: 15px;
-        object-fit: cover;
+      height: 320px;
     }
-
-    @media screen and (min-width: 2000px) {
-        width: 370px;
-        margin: 2rem 4rem;
-
-        img {
-            height: 320px;
-        }
-    }
+  }
 }

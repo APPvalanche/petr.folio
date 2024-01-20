@@ -155,23 +155,36 @@
 }
 
 .app__navbar-languages {
-  width: 30px;
-  height: 30px;
-  margin-top: 5px;
-  cursor: pointer;
-
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  justify-items: center;
 
-  &:hover {
-    border: 2px solid var(--secondary-color);
-    border-radius: 5px;
-    transition: 0.1s;
-  }
+  button {
+    height: 30px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 
-  @media screen and (max-width: 900px) {
-    margin-top: 0;
+    svg {
+      font-size: 20px;
+    }
+
+    &:hover {
+      border: 2px solid var(--black-color);
+      border-radius: 10px;
+      transition: 0.1s;
+    }
+
+    @media screen and (max-width: 900px) {
+      margin-top: 0;
+    }
   }
 
   .app__languages-div {
@@ -240,4 +253,3 @@
     }
   }
 }
-
