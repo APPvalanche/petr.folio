@@ -1,11 +1,17 @@
 import React, { useState } from "react";
-
+import { useTranslation } from "react-i18next";
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { client } from "../../client";
+import { FaFacebookSquare, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { SiTrustpilot } from "react-icons/si";
+
 import "./Footer.scss";
 
 const Footer = () => {
+
+  const { t } = useTranslation()
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -42,7 +48,7 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Have inquiries? We're just a message away.</h2>
+      <h2 className="head-text">{t("footer_heading")}</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
@@ -64,7 +70,7 @@ const Footer = () => {
             <input
               className="p-text"
               type="text"
-              placeholder="Your Name"
+              placeholder={t("footer_your_name")}
               name="username"
               value={username}
               onChange={handleChangeInput}
@@ -74,7 +80,7 @@ const Footer = () => {
             <input
               className="p-text"
               type="email"
-              placeholder="Your Email"
+              placeholder={t("footer_your_email")}
               name="email"
               value={email}
               onChange={handleChangeInput}
@@ -83,21 +89,44 @@ const Footer = () => {
           <div>
             <textarea
               className="p-text neumorphism__white"
-              placeholder="Your Message"
+              placeholder={t("footer_your_message")}
               value={message}
               name="message"
               onChange={handleChangeInput}
             />
           </div>
           <button type="button" className="p-text" onClick={handleSubmit}>
-            {!loading ? "Send Message" : "Sending..."}
+            {!loading ? "Send message" : "Sending..."}
           </button>
         </div>
       ) : (
         <div>
-          <h3 className="head-text">Thank you for getting in touch!</h3>
+          <h3 className="head-text">{t("footer_message_sent")}</h3>
         </div>
       )}
+      <div className="footer_links">
+        <div className="links">
+          <ul>
+            <li><FaFacebookSquare />Facebook</li>
+            <li><FaLinkedinIn />LinkedIn</li>
+            <li><FaGithub />GitHub</li>
+            <li><SiTrustpilot />Trustpilot</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>UpWork</li>
+            <li>Fiver</li>
+            <li>Google</li>
+            <li>Seznam</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Newport</h4>
+          <p className="p-text"> 17 Sycamore Avenue <br />
+                                  NP19 9AH</p>
+        </div>
+      </div>
     </>
   );
 };

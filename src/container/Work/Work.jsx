@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 import "./Work.scss";
 
 const Work = () => {
+  const { t } = useTranslation()
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState("All");
@@ -39,7 +41,7 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text" id="work">
-      Explore Our Projects
+      {t("work_heading")}
       </h2>
 
       <div className="app__work-filter">

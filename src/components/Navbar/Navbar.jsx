@@ -8,6 +8,7 @@ import { useRef } from "react";
 import { IoIosGlobe } from "react-icons/io";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 
 import "./Navbar.scss";
 
@@ -35,6 +36,8 @@ const Navbar = () => {
 
   const logoRef = useRef < lottieRefCurrentProps > null;
 
+  const { t } = useTranslation();
+
   return (
     <nav className="app__navbar">
       <div className="app__navbar-animation">
@@ -54,7 +57,7 @@ const Navbar = () => {
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <Link to={item} smooth={true} offset={1} duration={800}>
-              {item}
+              {t([item])}
             </Link>
           </li>
         ))}
@@ -82,11 +85,10 @@ const Navbar = () => {
       </div>
 
       <div className="app__navbar-languages">
-        <button onClick={() => setOpenLanguges(true)} >
+        <button onClick={() => setOpenLanguges(true)}>
           <IoIosGlobe />
           <RiArrowDropDownLine />
         </button>
-        
 
         {openLanguages && (
           <motion.div
@@ -99,7 +101,9 @@ const Navbar = () => {
               {languages.map(({ code, name, country_code }) => (
                 <li key={country_code}>
                   <button onClick={() => i18next.changeLanguage(code)}>
-                    <span className={`flag-icon flag-icon-${country_code}`}></span>
+                    <span
+                      className={`flag-icon flag-icon-${country_code}`}
+                    ></span>
                     <span onClick={() => setOpenLanguges(false)}>{name}</span>
                   </button>
                 </li>

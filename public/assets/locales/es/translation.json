@@ -1,10 +1,26 @@
 {
   "app_title": "Title",
   "language": "Language",
+  "home": "inicio",
+  "about": "nosotros",
+  "work": "proyectos",
+  "skills": "experiencia",
+  "contact": "contacto",
   "greeting": "Hola, bienvenido.",
   "header_info": "¡Desbloquee el potencial de su negocio con un sitio web profesional! Aumente su visibilidad en línea, atraiga más clientes y manténgase un paso por delante de la competencia.",
   "header_info_btn_contact": "Contactanos",
   "header_info_btn_work": "Mi trabajo",
-  "about_header": "Nuestra cartera de servicios",
-  "about_header_info": "Hledáte přesnost v kódu, moderní design a responzivní a dynamické webové stránky pro vaši firmu? Jste tady správně! Poskytuji komplexní služby od konzultací až po nasazení webových stránek, tvořím vše od portfolií po webové aplikace a e-shop."
+  "about_heading": "Algunas cosas en las que somos geniales",
+  "about_heading_p": "?Está buscando un diseño moderno con una página web dinámica y eficaz para para que su negocio crezca? ¡Tenemos la solución ideal para usted!",
+  "about_heading_p_info": "En appvalanche desarrollamos páginas webs desde el asesoramiento del diseño al lanzamiento de su página web.",
+  "feature_heading": "Ahorre dinero, impulse el éxito: ¡Optimice su presencia en la web ahora!",
+  "feature_button": "¡Consulta gratis!",
+  "work_heading": "Explora nuestros proyectos",
+  "skills_heading": "Servicios y Experiencias",
+  "footer_heading": "Contáctanos para una consulta gratuita.",
+  "footer_your_name": "Su nombre",
+  "footer_your_email": "Su correo electrónico",
+  "footer_your_message": "Su mensaje",
+  "footer_sent_button":"Send message",
+  "footer_message_sent": "¡Gracias por contactarnos! Nos pondremos en contacto con usted pronto."
 }

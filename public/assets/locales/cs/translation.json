@@ -1,10 +1,26 @@
 {
   "app_title": "Title",
   "language": "Language",
+  "home": "domů",
+  "about": "o nás",
+  "work": "projekty",
+  "skills": "skills",
+  "contact": "kontakty",
   "greeting": "Dobrý den, vítejte!",
   "header_info": "Odemkněte potenciál svého podnikání pomocí profesionálního webu! Zvyšte svou online viditelnost, přilákejte více zákazníků a zůstaňte o krok napřed před konkurencí.",
   "header_info_btn_contact": "Kontaktujte nás!",
   "header_info_btn_work": "Má práce",
-  "about_header": "Naše služby",
-  "about_header_info": "Hledáte přesnost v kódu, moderní design a responzivní a dynamické webové stránky pro vaši firmu? Jste tady správně! Poskytuji komplexní služby od konzultací až po nasazení webových stránek, tvořím vše od portfolií po webové aplikace a e-shop."
+  "about_heading": "Služby ve kterých jsme skvělí",
+  "about_heading_p": "Hledáte přesnost v kódu, moderní design a responzivní a dynamické webové stránky pro vaši firmu? Jste na správném místě!",
+  "about_heading_p_info": "V APPvalanche nabízíme komplexní služby od konzultací až po nasazení webových stránek, tvořím vše od portfolií po webové aplikace a e-shop.",
+  "feature_heading": "Ušetřete peníze, dosáhněte úspěchu: Optimalizujte svou webovou přítomnost ještě dnes!",
+  "feature_button": "Konzultace zdarma!",
+  "work_heading":"Naše nedávné projekty",
+  "skills_heading":"zkušenosti a skills",
+  "footer_heading":"Kontaktujte nás pro bezplatnou konzultaci.",
+  "footer_your_name":"Jméno",
+  "footer_your_email":"Email",
+  "footer_your_message":"Vaše zpráva",
+  "footer_sent_button":"Odeslat zprávu",
+  "footer_message_sent":"Děkujeme, za vaši zprávu! Brzy vás budeme kontaktovat."
 }

@@ -21,15 +21,22 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">
-        {t("about_header")}
-      </h2>
-        <p className="about-p">
-          <span>{t("about_header_p")}</span>
-        </p>
-        <p className="about-p">
-          {t("about_header_p_info")}
-        </p>
+      <div className="about_heading">
+        <div className="about_heading_h2">
+          <h2 className="head-text">
+            {t("about_heading")}
+          </h2>
+          <div />
+        </div> 
+        <div className="about_heading_p">
+          <p className="about-p">
+            <span>{t("about_heading_p")}</span>
+          </p>
+          <p className="about-p">
+            {t("about_heading_p_info")}
+          </p>
+        </div>
+      </div>
      
       <div className="app__profiles">
         {abouts.map((about, index) => (

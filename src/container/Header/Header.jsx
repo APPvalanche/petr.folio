@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { images } from "../../constants";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 import "./Header.scss";
 
@@ -44,7 +44,7 @@ const Header = () => {
             </button>
             <button className="btn_work">
               <a href="#work">{t("header_info_btn_work")}</a>
-              <MdKeyboardDoubleArrowRight />
+              <MdOutlineArrowOutward />
             </button>
           </div>
           </div>

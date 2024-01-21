@@ -126,7 +126,7 @@
     }
 
     &:hover {
-      border: 1px solid var(--black-color);
+      background-color: var(--lightGray-color);
     }
 
     @media screen and (max-width: 450px) {

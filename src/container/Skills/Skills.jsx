@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Tooltip as ReactTooltip } from "react-tooltip";
+import { useTranslation } from "react-i18next";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 import "./Skills.scss";
 
 const Skills = () => {
+  const { t } = useTranslation()
   const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState([]);
 
@@ -25,7 +27,7 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">Skills & Experiences</h2>
+      <h2 className="head-text">{t("skills_heading")}</h2>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
