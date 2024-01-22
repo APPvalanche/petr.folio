@@ -26,13 +26,13 @@ const About = () => {
           <h2 className="head-text">
             {t("about_heading")}
           </h2>
-          <div />
+          <div className="div-bar" />
         </div> 
-        <div className="about_heading_p">
-          <p className="about-p">
+        <div className="p-text about_heading_p">
+          <p className="p-text">
             <span>{t("about_heading_p")}</span>
           </p>
-          <p className="about-p">
+          <p className="p-text">
             {t("about_heading_p_info")}
           </p>
         </div>

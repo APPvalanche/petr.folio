@@ -16,11 +16,12 @@ import redux from "../assets/redux.png";
 import sass from "../assets/sass.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
-
 import profile from "../assets/profile.png";
 import logo from "../assets/logo.png";
-
 import amazon from "../assets/amazon.png";
+import bitcoin from "../assets/bitcoin.png";
+import paypal from "../assets/paypal.png";
+import revolut from "../assets/revolut.png";
 
 export default {
   email,
@@ -44,4 +45,7 @@ export default {
   profile,
   logo,
   amazon,
+  bitcoin,
+  paypal,
+  revolut,
 };

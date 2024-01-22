@@ -43,6 +43,7 @@ const Work = () => {
       <h2 className="head-text" id="work">
       {t("work_heading")}
       </h2>
+      <div className="div-bar" />
 
       <div className="app__work-filter">
         {["UI/UX", "Web App", "Mobile App", "React JS", "All"].map(

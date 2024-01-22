@@ -53,7 +53,6 @@
     color: var(--black-color);
     padding-left: 1rem;
     padding-bottom: 2rem;
-
   }
 
   p {
@@ -61,6 +60,11 @@
     line-height: 2rem;
     color: var(--black-color);
     padding: 0 1rem;
+
+    @media screen and (min-width: 2000px) {
+      font-size: 1.75rem;
+      line-height: 1.5;
+    }
   }
 }
 

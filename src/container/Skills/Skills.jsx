@@ -28,6 +28,7 @@ const Skills = () => {
   return (
     <>
       <h2 className="head-text">{t("skills_heading")}</h2>
+      <div className="div-bar" />
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">

@@ -37,3 +37,8 @@
 .neumorphism__white {
   box-shadow: -3px -3px 7px #f7f7f673, 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
+
+.loadingMarkup {
+  padding: 8rem 0;
+  text-align: center;
+}
