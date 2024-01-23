@@ -6,7 +6,8 @@
 
   --primary-color: #fdfdff;
   --secondary-color: #5271ff;
-  --black-color: #0c1821;  --lightGray-color: #f0f5ff;
+  --black-color: #0c1821;  
+  --lightGray-color: #f0f5ff;
   --gray-color: #6b7688;
   --white-color: #ffffff;
   --violet-color: #fafaff;
@@ -39,6 +40,7 @@
 }
 
 .loadingMarkup {
+  font-family: "Manrope", sans-serif;
   padding: 8rem 0;
   text-align: center;
 }

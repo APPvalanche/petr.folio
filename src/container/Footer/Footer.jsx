@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { client } from "../../client";
-import { FaFacebookSquare, FaLinkedinIn, FaGithub, FaRegCopyright } from "react-icons/fa";
+import { FaFacebookSquare, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { SiTrustpilot, SiUpwork } from "react-icons/si";
 import { TbBrandFiverr } from "react-icons/tb";
 

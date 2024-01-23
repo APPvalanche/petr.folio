@@ -12,10 +12,10 @@ i18n
     debug: true,
     fallbackLng: "en",
     detection: {
-      order: [ "cookie", "htmlTag", "localStorage", "path", "subdomain"],
+      order: ["cookie", "htmlTag", "localStorage", "path", "subdomain"],
       caches: ["cookie"],
     },
     backend: {
-      loadPath: "/assets/locales/{{lng}}/translation.json",
+      loadPath: "assets/locales/{{lng}}/translation.json",
     },
   });

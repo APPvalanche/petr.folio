@@ -18,7 +18,6 @@ import "react-tooltip/dist/react-tooltip.css";
 import '../node_modules/flag-icon-css/css/flag-icons.min.css'
 
 const App = () => {
-  const { t } = useTranslation();
 
   return (
     <div className="app">
