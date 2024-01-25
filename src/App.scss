@@ -82,6 +82,13 @@
   }
 }
 
+.text-gradient {
+  background: #5271FF;
+  background: linear-gradient(to right, #5271FF 10%, #DE49A3 50%, #9914FF 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .bold-text {
   font-size: 1rem;
   font-weight: 800;

@@ -51,8 +51,8 @@
         background-color: #edf2f8;
 
         img {
-            width: 50%;
-            height: 50%;
+            width: 60%;
+            height: 60%;
         }
 
         &:hover {
@@ -105,7 +105,7 @@
     margin: 1rem 0;
 }
 
-.app__skills-exp-works {
+.app__skills-exp-work {
     flex: 1;
 
     .app__skills-exp-work {
@@ -114,7 +114,6 @@
         justify-content: flex-start;
         align-items: flex-start;
         margin-bottom: 1rem;
-        cursor: pointer;
 
         h4 {
             font-weight: 500;
@@ -141,20 +140,20 @@
     }
 }
 
-.skills-tooltip {
-    max-width: 300px !important;
-    background-color: var(--white-color) !important;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
-    border-radius: 5px !important;
-    padding: 1rem !important;
-    color: var(--gray-color) !important;
-    text-align: center !important;
-    line-height: 1.5 !important;
-    opacity: 1 !important;
+.app__skills-tooltip .skills-tooltip {
+    max-width: 300px;
+    background-color: var(--white-color);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: var(--gray-color);
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.5;
+    opacity: 1;
   
     @media screen and (min-width: 2000px) {
-      font-size: 1.75rem !important;
-      max-width: 500px !important;
-      line-height: 2 !important;
+        font-size: 1.75rem;
+        max-width: 500px;
+        line-height: 2;
     }
   }

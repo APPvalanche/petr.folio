@@ -29,7 +29,7 @@ const About = () => {
           <div className="div-bar" />
         </div> 
         <div className="p-text about_heading_p">
-          <p className="p-text">
+          <p className="p-text text-gradient">
             <span>{t("about_heading_p")}</span>
           </p>
           <p className="p-text">

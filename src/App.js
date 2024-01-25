@@ -9,9 +9,9 @@ import {
   Testimonial,
   Work,
   Features,
+  Footerlinks,
 } from "./container";
 import { Navbar } from "./components";
-import { useTranslation } from "react-i18next";
 
 import "./App.scss";
 import "react-tooltip/dist/react-tooltip.css";
@@ -35,6 +35,7 @@ const App = () => {
       <Skills />
       <Testimonial />
       <Footer />
+      <Footerlinks />
     </div>
   );
 };
