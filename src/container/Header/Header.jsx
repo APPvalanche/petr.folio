@@ -53,5 +53,5 @@ const Header = () => {
 export default AppWrap(
   MotionWrap(Header, "app__header"),
   "home",
-  "app__primarybg"
+  "app__primarybg",
 );

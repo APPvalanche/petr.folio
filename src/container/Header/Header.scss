@@ -1,8 +1,8 @@
 // disable the default padding styles
 #home {
-  background-image: url(../../assets/header_bg.png);
   height: 100%;
   background-size: cover;
+ background-image: url(../../assets/mesh1.png);
 }
 
 .app__wrapper {
@@ -136,7 +136,7 @@
   }
 
   &:hover {
-    background-color: var(--lightGray-color);
+    border: 1.5px solid var(--black-color);
   }
 
   @media screen and (max-width: 450px) {
