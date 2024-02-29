@@ -1,14 +1,3 @@
-#features {
-  background-image: url(../../assets/feature_bg.png);
-  height: 100%;
-  background-size: cover;
-  
-    img {
-      background-repeat: no-repeat;
-      height: 100%;
-      width: auto;
-  }
-}
 
 .app__features {
   @media screen and (min-width: 1200px) {
@@ -83,15 +72,24 @@
 }
 
 .features__animation {
-  width: 50%;
+  max-width: 50%;
+  background-image: url(../../assets/bg_features_animation.png);
+  width: 100%;
+  background-size: cover;
+  
+    img {
+      background-repeat: no-repeat;
+      height: 100%;
+      width: auto;
+  }
 
   @media screen and (max-width: 900px) {
-    width: 100%;
+    max-width: 100%;
     padding: 1rem;
   }
 
   @media screen and (max-width: 450px) {
-    width: 100%;
+    max-width: 100%;
     padding: 1rem;
   }
 }

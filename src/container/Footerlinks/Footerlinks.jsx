@@ -13,6 +13,10 @@ const Footerlinks = () => {
   
   return (
     <>
+    <div className='border_top'>
+      <div className='line'/>
+    </div>
+    <div className='footer__bottom'>
        <div className="footer_columns">
         <div className="footer-col1">
           <h4>{t("footer_col1_heading")}</h4>
@@ -95,6 +99,7 @@ const Footerlinks = () => {
       </div>
       <div className="footer_copyright">
           <p className="p-text">{t("footer_copyright_text")}</p>
+        </div>
       </div>
     </>
   )

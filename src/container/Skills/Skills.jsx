@@ -16,7 +16,7 @@ const Skills = () => {
   const isMobile = useMediaQuery({ query: "(max-width:700px)" });
 
   useEffect(() => {
-    const query = '*[_type == "experiences"]';
+    const query = '*[_type == "experiences"] | order(year desc)';
     const skillsQuery = '*[_type == "skills"]';
 
     client.fetch(query).then((data) => setExperiences(data));
@@ -30,7 +30,7 @@ const Skills = () => {
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
-        {skills?.map((skill) => (
+          {skills?.map((skill) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.25 }}
@@ -50,8 +50,11 @@ const Skills = () => {
         <motion.div className="app__skills-exp">
           {experiences?.map((experience) => (
             <motion.div className="app__skills-exp-item" key={experience.year}>
+              <div className="app__skills-exp-year">
+                <p className="bold-text">{experience.year}</p>
+              </div>
               <motion.div className="app__skills-exp-works">
-              {experience.works?.map((work) => (
+                {experience.works?.map((work) => (
                   <div className="app__skills-tooltip" key={work.name}>
                     <motion.div
                       whileInView={{ opacity: [0, 1] }}
@@ -63,7 +66,7 @@ const Skills = () => {
                       <p className="p-text">{work.company}</p>
                     </motion.div>
                     <ReactTooltip
-                      id={work._key}
+                      id={work.name}
                       place={isMobile ? "top" : "right"}
                       className="skills-tooltip"
                     >
