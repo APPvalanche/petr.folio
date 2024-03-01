@@ -8,14 +8,14 @@ import { urlFor, client } from "../../client";
 import "./Work.scss";
 
 const Work = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState("All");
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
   useEffect(() => {
-    const query = '*[_type == "works"]';
+    const query = '*[_type == "works"] | order(year asc)';
 
     client.fetch(query).then((data) => {
       setWorks(data);
@@ -41,7 +41,7 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text" id="work">
-      {t("work_heading")}
+        {t("work_heading")}
       </h2>
       <div className="div-bar" />
 
@@ -67,7 +67,10 @@ const Work = () => {
         className="app__work-portfolio"
       >
         {filterWork.map((work, index) => (
-          <div className="app__work-item app__flex glassmorphism__light" key={index}>
+          <div
+            className="app__work-item app__flex glassmorphism__light"
+            key={index}
+          >
             <div className="app__work-img app__flex">
               <img src={urlFor(work.imgUrl)} alt={work.name} />
 
