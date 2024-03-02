@@ -19,7 +19,7 @@ const SocialMedia = () => {
         </a>
       </div>
       <div className="neumorphism__white">
-        <a href="https://github.com/PetrZajkasWebdesign" target="blank">
+        <a href="https://github.com/APPvalanche" target="blank">
           <BsGithub />
         </a>
       </div>
