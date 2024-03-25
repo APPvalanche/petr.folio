@@ -4,15 +4,27 @@
   --font-base: "Manrope", sans-serif;
 
   --primary-color: #fdfdff;
-  --secondary-color: #713dc1;
+  --secondary-color: #5271ff;
   --black-color: #0f0f0f;
   --lightGray-color: #f0f5ff;
   --gray-color: #6b7688;
   --white-color: #fdfdff;
   --violet-color: #fafaff;
-  /*#5271ff*/
+  /*#713dc1*/
 }
+/*
+:root {
+  --font-base: "Manrope", sans-serif;
 
+  --primary-color: #fdfdff;
+  --secondary-color: #5271ff;
+  --black-color: #0f0f0f;
+  --lightGray-color: #f0f5ff;
+  --gray-color: #6b7688;
+  --white-color: #fdfdff;
+  --violet-color: #fafaff;
+}
+*/
 * {
   scroll-behavior: smooth;
   box-sizing: border-box;
